@@ -1,0 +1,28 @@
+{
+  "name": "hypertube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^4.1.2",
+    "cron": "^1.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "server": "cd server && npx nodemon server.js",
+    "client": "cd client && npm start",
+    "start": "concurrently \"cd client && npm start\" \"cd server && npx nodemon server.js\"",
+    "inst": "npm i && cd client && npm i && cd ../server && npm i && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/remyoster/hypertube.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/remyoster/hypertube/issues"
+  },
+  "homepage": "https://gitlab.com/remyoster/hypertube#readme"
+}

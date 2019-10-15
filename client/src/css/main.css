@@ -1,0 +1,576 @@
+/* TODO
+Drag and drop register react crash
+hisstory link bug ? */
+
+html, body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: rgb(43, 43, 43);
+	background: radial-gradient(circle, rgba(43, 43, 43, 1) 11%, rgba(0, 0, 0, 1) 69%);
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	font-size: 1.1em;
+}
+
+h1, h2, h3 {
+	font-family: ""Roboto", "Helvetica", "Arial", sans-serif"
+}
+
+ul {
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	/* text-decoration: none; */
+	all: unset;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.miniature {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	box-sizing: border-box;
+	box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.18), 0 0 9px 4px rgba(245, 245, 245, 0.15);
+	text-align: center;
+}
+
+.miniature img {
+	max-height: 400px;
+}
+
+.miniature:hover {
+	cursor: pointer;
+	box-shadow: 0 0 9px 4px rgba(255, 255, 255, 0.5), 0 0 10px 5px rgba(245, 245, 245, 0.48);
+	transform: scale(1.01, 1.01);
+}
+
+.movie-title {
+	margin-bottom: 0.5em;
+	font-weight: bold;
+}
+
+.ratings {
+	margin: 1em 0;
+}
+
+.rate-value {
+	color: yellow;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.video {
+	display: flex;
+}
+
+.video img {
+	margin: auto;
+}
+
+video {
+	margin: 1em auto;
+}
+
+.torrent {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0.5em auto;
+	width: 50%;
+}
+
+.magnet-link {
+	display: flex;
+	justify-content: center;
+	margin: 1px;
+	padding: 1px;
+}
+
+.magnet-link span {
+	margin-right: 5px;
+}
+
+.magnet-link:hover {
+	border-bottom: 1px solid white;
+	cursor: pointer;
+}
+
+.lang-flag {
+	width: 20px;
+}
+
+.movie-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.movie-details li {
+	width: 75%;
+	margin: 0.5em auto;
+	text-align: center;
+}
+
+.loader {
+	margin-top: 5em;
+	display: flex;
+}
+
+.loader img {
+	margin: auto;
+	width: 50%;
+}
+
+.comments {
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	overflow-y: auto;
+}
+
+.comment {
+	width: 75%;
+	margin: 0.5em auto;
+	text-align: center;
+}
+
+.comments form {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#submit-comment {
+	width: 20%;
+	margin: auto;
+}
+
+/* SORTBAR */
+
+.filters-container {
+	width: 97%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.filters-gender {
+	width: 90%;
+	margin: 1em auto;
+	border: 1px solid gold;
+	border-radius: 5px;
+}
+
+.genderslist {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
+
+.genderslist li {
+	padding: 5px;
+	margin: 1px;
+	cursor: pointer;
+	border-radius: 3px
+}
+
+.filters-slide {
+	display: flex;
+	width: 90%;
+	margin: 1em auto;
+	padding: 3em 0;
+	border: 1px solid gold;
+	border-radius: 5px;
+}
+
+.filters-slide label {
+	padding-right: 1em;
+}
+
+/* .MuiPaper-root {
+	top: 5px !important;
+	left: 48% !important;
+} */
+
+.MuiInput-underline:after {
+	border-bottom: 0px !important;
+}
+
+.MuiList-padding {
+	padding: 0px !important;
+	/* background-color: black !important; */
+	margin-right: 10px !important;
+}
+
+.selectLang img, .itemLang img {
+	width: 30%;
+}
+
+.MuiMenuItem-gutters {
+	padding: 5px 0px !important;
+	justify-content: center !important;
+	width: 100% !important;
+}
+
+.itemLang:hover {
+	background-color: #dfb220 !important;
+}
+
+/*AUTH - LOGIN - REGISTER*/
+
+.auth {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	background-image: url('/files/img/ticket.jpg');
+	background-size: 100%;
+	background-repeat: repeat-y;
+}
+
+.auth>div {
+	width: 100%;
+	padding: 4%;
+	text-align: center;
+}
+
+.tabAuth {
+	color: #ffffff;
+}
+
+.signWith {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 10px;
+}
+
+.signWith>a {
+	display: block;
+	border: 0px;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	font-size: 19px;
+	margin: 5px;
+	width: 90%;
+	overflow: hidden;
+	padding: 5px 10px;
+	user-select: none;
+	height: 50px;
+}
+
+.insta {
+	background: linear-gradient(to right, rgb(255, 250, 205) 0%, rgb(214, 146, 60) 30%, rgb(180, 14, 224) 70%, rgb(105, 14, 224) 100%);
+}
+
+.github {
+	background: linear-gradient(to right, rgb(255, 255, 255), 70%, rgb(51, 51, 51) 100%);
+	color: black;
+}
+
+.fortytwo {
+	background: url('https://companies.intra.42.fr/assets/low-poly-texture-6a84713452ad1ccb8603a11607416d5a541072ce82cb489f35d4354499fb99c1.png');
+	background-position: center;
+}
+
+.github p {
+	color: black;
+}
+
+.signLogo {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: flex-start;
+	padding: 0px 5px 5px;
+}
+
+.signLogo>img {
+	width: 50px;
+	margin-right: 10%;
+}
+
+.formInfo {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 1% 0px;
+}
+
+.formInfo>input {
+	font-size: 0.9em;
+	padding: 10px 20px;
+	margin: 3% 0px;
+	border-radius: 10px;
+}
+
+.send {
+	width: 100%;
+	padding: 10px;
+	margin: 0px;
+	background-color: #dfb220;
+	font-size: 0.9em;
+	border-radius: 10px;
+	border: none;
+}
+
+.buttonToggle {
+	font-size: 1.1em;
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
+	margin: 0px;
+	text-align: center;
+	color: #dfb220;
+	background-color: inherit;
+}
+
+.buttonToggle:hover {
+	color: white;
+}
+
+.buttonToggle:hover, .send:hover {
+	cursor: pointer;
+}
+
+h1 {
+	color: #dfb220;
+}
+
+.pres {
+	text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+	.pres {
+		display: none;
+	}
+}
+
+.pres>img {
+	margin: 10% 0px;
+	width: 60%;
+}
+
+.identify {
+	padding: 10px;
+}
+
+.identify label {
+	color: white;
+}
+
+.sliders {
+	width: 50%;
+	margin: auto;
+}
+
+/* material ui form */
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus {
+	-webkit-text-fill-color: "rgba(190, 190, 190, 0.45)";
+	box-shadow: 0 0 0px 1000px rgba(190, 190, 190, 0) inset;
+	-webkit-box-shadow: 0 0 0px 1000px rgba(190, 190, 190, 0) inset;
+	border-top-left-radius: "0.3rem";
+	border-top-right-radius: "0.3rem";
+	transition: background-color 5000s ease-in-out 0s;
+	color: #f0efef;
+}
+
+input:-webkit-autofill {
+	-webkit-text-fill-color: #f0efef !important;
+}
+
+#LoginForm, #PasswordForm, #lastname, #firstname, #username, #mail, #password, #cfpassword {
+	color: #f0efef;
+}
+
+#sendLogin, #sendLogin2, #sendRegister, #sendRegister2, #sendRegister3, #sendclear {
+	/* background-color: #dfab00; */
+	border-radius: 0.4rem;
+	/* color: #f7efd7 */
+}
+
+#ForgotPwd, #LinkProfil{
+	cursor: pointer;
+	color: #fdd835;
+}
+
+/* Register.js */
+
+#imgprev {
+	display: block;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	-webkit-border-radius: 50px;
+	box-shadow: 0px 0px 10px #909090;
+	-webkit-box-shadow: 0px 0px 10px #909090;
+	-moz-border-radius: 50px;
+	border-radius: 90px;
+	width: 200px;
+}
+
+
+
+
+/* Account.js */
+
+#drag {
+	margin: auto;
+	width: 95%;
+	border: whitesmoke 4px;
+	border-style: dashed solid;
+}
+
+.account {
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	/* margin: 15% 0%; */
+}
+
+.account label {
+	color: white;
+}
+
+.textImgDrop {
+	margin: auto;
+	text-align: center;
+}
+
+.divForm {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.avatarAccount {
+	display: block;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	-webkit-border-radius: 50px;
+	box-shadow: 0px 0px 10px #909090;
+	-webkit-box-shadow: 0px 0px 10px #909090;
+	-moz-border-radius: 50px;
+	border-radius: 90px;
+	width: 200px;
+}
+.user-img {
+	margin: auto;
+	text-align: center;
+	padding: 5px 0px;
+}
+/* Catalogue */
+
+.catalogue-bar {
+	margin: 0.3%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#div-searchBar {
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+
+.MuiInputBase-root {
+	width: 100%;
+}
+
+#paper1Cata {
+	background: #534f45a6;
+	border: solid rgb(255, 255, 255) 1px;
+	border-radius: 10px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.labelSort {
+	text-align: center;
+	margin: auto;
+	/* margin-bottom: 38px; */
+	color: white;
+}
+
+.filters {
+	margin-top: 38px;
+}
+
+.genderL {
+	color: white;
+	/* padding: 50px; */
+}
+
+.orderContainer {
+	display: inline block;
+}
+
+#orderBy {
+	/* display: none; */
+	background-color: rgba(190, 190, 190, 0.45);
+	border-top-left-radius: 0.3rem;
+	border-top-right-radius: 0.3rem;
+	color: #f0efef;
+	width: 40%;
+	/* 540px width: 100% */
+}
+
+#orderBy label {
+	color: #f0efef;
+}
+
+.arrow {
+	cursor: pointer;
+	margin-top: 15px;
+}
+
+/* Red error */
+
+#LoginForm-helper-text, #PasswordForm-helper-text, #lastname-helper-text, #firstname-helper-text, #username-helper-text, #mail-helper-text, #password-helper-text, #cfpassword-helper-text {
+	padding: 5px;
+	font-size: 15px;
+}
+.subtitles {
+	border-radius: 10px;
+	background-color: #FBC02D;
+	width: 30%;
+	text-align: center;
+	padding: 5px;
+	color: black;
+}.link {
+	color: #fbc02d;
+	text-decoration: none;
+}
+.link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a:hover {
+	cursor: pointer;
+}
