@@ -23,18 +23,24 @@ npm run inst
 npm start
 ```
 
-# FEATURE
+# Feature
 
-Site traduit en anglais ou en francais 
-possibiliter de ce connecter avec d'autre service 42 Github instagrame en plus de la création de compte
-image de profil etupload possible en drag and drop
-récupération de 2 base de donée peer to peer: YTS et PopCorn
-hisstorique des filme regarder (suprimable)
-gestion commentaire
+Site traduit en anglais ou en francais
+
+Possibiliter de ce connecter avec d'autre service 42 Github instagrame en plus de la création de compte (O'Auth)
+
+Image de profil etupload possible en drag and drop
+
+Récupération de 2 base de donée peer to peer: YTS et PopCorn
+
+Hisstorique des filme regarder (suprimable)
+
+Gestion commentaire
+
 Gestion de compte
+
 Gestion de plusieur résolution
-mobile friendly
-bypass cloudflair pour avoir acces a l'api en cas de surcharge
 
+Mobile friendly
 
-
+bypass cloudflare pour avoir acces a l'api en cas de ban / surcharge
