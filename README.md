@@ -14,6 +14,15 @@ One page app React / API restfull node.js / Databse: Mongo DB
 ![5](https://user-images.githubusercontent.com/44972661/66799326-e3b02d80-ef10-11e9-9999-5d1c5c5c777a.PNG)
 ![6](https://user-images.githubusercontent.com/44972661/66799320-e27f0080-ef10-11e9-8f7a-ada290ba6e9d.PNG)
 
+# Comment l'utiliser
+
+Installer Node.js et Mongo db
+
+`npm run inst`
+`npm start`
+
+# FEATURE
+
 Site traduit en anglais ou en francais 
 possibiliter de ce connecter avec d'autre service 42 Github instagrame en plus de la création de compte
 image de profil etupload possible en drag and drop
@@ -26,9 +35,4 @@ mobile friendly
 bypass cloudflair pour avoir acces a l'api en cas de surcharge
 
 
-Comment l'utiliser
 
-installer node et mongo db
-
-npm run inst
-npm start
