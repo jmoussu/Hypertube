@@ -18,8 +18,8 @@ One page app React / API restfull node.js / Databse: Mongo DB
 
 Installer Node.js et Mongo db
 
-`npm run inst`
-`npm start`
+```npm run inst
+npm start```
 
 # FEATURE
 
