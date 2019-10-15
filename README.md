@@ -44,3 +44,8 @@ Gestion de plusieur résolution
 Mobile friendly
 
 Bypass cloudflare pour avoir acces a l'api en cas de ban / surcharge
+
+# Contributor
+https://gitlab.com/lacretelle
+https://gitlab.com/remyoster
+https://gitlab.com/gigistone
