@@ -46,7 +46,7 @@ Mobile friendly
 Bypass cloudflare pour avoir acces a l'api en cas de ban / surcharge
 
 # Contributor
-https://gitlab.com/lacretelle
+https://gitlab.com/lacretelle / https://github.com/lacretelle
 
 https://gitlab.com/remyoster
 
