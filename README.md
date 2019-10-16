@@ -25,25 +25,25 @@ npm start
 
 # Feature
 
-Site traduit en anglais ou en francais
+Site traduit en anglais et en francais
 
-Possibiliter de ce connecter avec d'autre service 42 Github instagrame en plus de la création de compte (O'Auth)
+Possibilitéer de se connecter avec d'autres services 42 Github instagram en plus de la création de compte (O'Auth)
 
-Image de profil etupload possible en drag and drop
+Image de profil et upload possible en drag and drop
 
-Récupération de 2 base de donée peer to peer: YTS et PopCorn
+Récupération de 2 bases de données peer to peer: YTS et PopCorn
 
-Hisstorique des filme regarder (suprimable)
+Historique des films regardés (supprimable)
 
 Gestion commentaire
 
 Gestion de compte
 
-Gestion de plusieur résolution
+Gestion de plusieurs résolutions
 
 Mobile friendly
 
-Bypass cloudflare pour avoir acces a l'api en cas de ban / surcharge
+Bypass cloudflare pour avoir accès à l'api en cas de ban / surcharge
 
 # Contributor
 https://gitlab.com/lacretelle / https://github.com/lacretelle
